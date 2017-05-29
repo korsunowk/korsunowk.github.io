@@ -1,5 +1,7 @@
 import re
 import json
+from collections import OrderedDict
+
 
 content = """
 <td>1</td>
@@ -1374,7 +1376,7 @@ for find in re.findall('<td.*?>(.+?)</td>', content):
     word = find.split('<')[0].split('&')[0]
     words.append(word)
 
-dictionary = dict()
+dictionary = OrderedDict()
 
 for word in range(0, len(words), 5):
     dictionary[words[word]] = {
