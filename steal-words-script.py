@@ -1386,5 +1386,4 @@ for word in range(0, len(words), 5):
 
 
 with open('words.json', 'w') as f:
-    json.dump(dictionary, f, ensure_ascii=False)
-
+    json.dump(dictionary, f, ensure_ascii=False, indent=4)
