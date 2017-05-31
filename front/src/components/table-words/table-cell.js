@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class One extends React.Component {
+export default class TableCell extends React.Component {
     render () {
         return (
             <tr>
