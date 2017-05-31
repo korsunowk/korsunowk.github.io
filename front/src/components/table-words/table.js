@@ -12,9 +12,11 @@ export default class WordsTable extends React.Component {
         let _words = new Object();
         for(let i=1; i<= Object.keys(words).length; i++)
             _words[i] = words[i];
+
         this.state = {
             _words: _words
         };
+
         this.Search = this.Search.bind(this);
     }
 
@@ -32,7 +34,6 @@ export default class WordsTable extends React.Component {
                     new_words[i] = words[i];
                 else if (words[i]['perfect'].search(e.target.value.trim()) >= 0)
                     new_words[i] = words[i];
-
             }
             this.setState({
                 _words: new_words
@@ -46,12 +47,11 @@ export default class WordsTable extends React.Component {
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        return !(this.state._words == nextState)
+        return !(JSON.stringify(this.state._words) === JSON.stringify(nextState._words))
     }
 
     render () {
         let cells = new Array();
-        // console.log(this.state._words);
         for(let key in this.state._words) {
             cells.push(
                 <TableCell
