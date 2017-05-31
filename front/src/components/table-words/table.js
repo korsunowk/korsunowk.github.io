@@ -22,19 +22,12 @@ export default class WordsTable extends React.Component {
         return (
             <table>
                 <tbody>
-                    <tr>
+                    <tr className="table-header">
                         <th>№</th>
                         <th>Infinitive</th>
                         <th>Past simple</th>
                         <th>Past participle</th>
                         <th>Russian translate</th>
-                    </tr>
-                    <tr className="empty-tr">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                     </tr>
                     {cells}
                 </tbody>

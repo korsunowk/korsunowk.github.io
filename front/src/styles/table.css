@@ -24,15 +24,11 @@ tr > td {
     border-right: 1px solid green;
 }
 
-tr.empty-tr td {
-    height: 1px;
-}
-
-tr:not(.empty-tr) {
+tr {
     border-bottom: 1px solid green;
 }
 
-tr:not(.empty-tr):hover {
+tr:not(.table-header):hover {
     cursor: pointer;
     background-color:#FFFACD;
 }
