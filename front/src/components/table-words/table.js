@@ -9,7 +9,7 @@ export default class WordsTable extends React.Component {
     constructor() {
         super();
 
-        let _words = new Object();
+        let _words = {};
         for(let i=1; i<= Object.keys(words).length; i++)
             _words[i] = words[i];
 
@@ -22,9 +22,9 @@ export default class WordsTable extends React.Component {
 
     Search(e) {
         if (e.target.value !== "") {
-            let new_words = new Object();
+            let new_words = {};
             for(let i=1; i<=Object.keys(words).length; i++) {
-                if (e.target.value == i.toString())
+                if (e.target.value === i.toString())
                     new_words[i] = words[i];
                 else if (words[i]['russian_translate'].search(e.target.value.trim()) >= 0) 
                     new_words[i] = words[i];
@@ -51,7 +51,9 @@ export default class WordsTable extends React.Component {
     }
 
     render () {
-        let cells = new Array();
+        let cells = [];
+        let words_exist = false;
+
         for(let key in this.state._words) {
             cells.push(
                 <TableCell
@@ -63,8 +65,13 @@ export default class WordsTable extends React.Component {
                     number={key}
                 />
             )
+            words_exist = true;
         }
-        console.log("Render------");
+        if (!words_exist)
+            cells.push(
+                <TableCell empty key={0} />
+            )
+
         return (
             <div>
                 <SearchBlock onChange={this.Search} />
