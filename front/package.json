@@ -1,7 +1,7 @@
 {
   "name": "front",
   "version": "0.1.0",
-  "homepage": "https://korsunowk.github.io/my-app",
+  "homepage": "https://korsunowk.github.io/",
   "private": true,
   "dependencies": {
     "react": "^15.5.4",
