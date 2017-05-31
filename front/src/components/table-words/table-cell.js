@@ -1,15 +1,13 @@
 import React from 'react';
 
-export default class TableCell extends React.Component {
-    render () {
-        return (
-            <tr>
-                <td>{this.props.number}</td>
-                <td>{this.props.infinitive}</td>
-                <td>{this.props.past_simple}</td>
-                <td>{this.props.perfect}</td>
-                <td>{this.props.russian}</td>
-            </tr>
-        )
-    }
+export default function TableCell (props) {
+    return (
+        <tr>
+            <td>{props.number}</td>
+            <td>{props.infinitive}</td>
+            <td>{props.past_simple}</td>
+            <td>{props.perfect}</td>
+            <td>{props.russian}</td>
+        </tr>
+    )
 }
