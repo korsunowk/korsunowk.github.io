@@ -1,5 +1,6 @@
 import React from 'react';
 import TableCell from './table-cell';
+import SearchBlock from './search-block';
 
 import '../../styles/table.css';
 var words = require('../../words.json');
@@ -20,18 +21,21 @@ export default class WordsTable extends React.Component {
             )
         }
         return (
-            <table>
-                <tbody>
-                    <tr className="table-header">
-                        <th>№</th>
-                        <th>Infinitive</th>
-                        <th>Past simple</th>
-                        <th>Past participle</th>
-                        <th>Russian translate</th>
-                    </tr>
-                    {cells}
-                </tbody>
-            </table>
+            <div>
+                <SearchBlock />
+                <table>
+                    <tbody>
+                        <tr className="table-header">
+                            <th>№</th>
+                            <th>Infinitive</th>
+                            <th>Past simple</th>
+                            <th>Past participle</th>
+                            <th>Russian translate</th>
+                        </tr>
+                        {cells}
+                    </tbody>
+                </table>
+            </div>
         )
     }
 }
