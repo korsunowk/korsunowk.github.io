@@ -1,0 +1,38 @@
+table {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    border: 2px solid green;
+    border-radius: 6px;
+    border-collapse: collapse;
+    
+    box-shadow: 0 0 10px yellowgreen;
+}
+
+tr th {
+    height: 30px;
+}
+
+td {
+    text-align: center;
+}
+
+tr > td {
+    height: 35px;
+    min-width: 50px;
+    border-right: 1px solid green;
+}
+
+tr.empty-tr td {
+    height: 1px;
+}
+
+tr:not(.empty-tr) {
+    border-bottom: 1px solid green;
+}
+
+tr:not(.empty-tr):hover {
+    cursor: pointer;
+    background-color:#FFFACD;
+}

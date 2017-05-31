@@ -1,6 +1,7 @@
 import React from 'react';
 import TableCell from './table-cell';
 
+import '../../styles/table.css';
 var words = require('../../words.json');
 
 export default class WordsTable extends React.Component {
@@ -14,12 +15,27 @@ export default class WordsTable extends React.Component {
                     past_simple={words[i]['past_simple']}
                     perfect={words[i]['perfect']}
                     key={i}
+                    number={i}
                 />
             )
         }
         return (
             <table>
                 <tbody>
+                    <tr>
+                        <th>№</th>
+                        <th>Infinitive</th>
+                        <th>Past simple</th>
+                        <th>Past participle</th>
+                        <th>Russian translate</th>
+                    </tr>
+                    <tr className="empty-tr">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
                     {cells}
                 </tbody>
             </table>
