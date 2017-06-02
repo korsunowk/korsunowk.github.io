@@ -21,8 +21,8 @@ class App extends Component {
       <div className="App">
         <img src={logo} className="App-logo" alt="logo" />
         <div className="app-block">
-          <h1>Welcome to Past participle helper</h1>          
-          <Router>
+          <h1>Welcome to Past participle helper</h1>    
+          <Router>      
             <div>
               <div className="buttons">
                 <NavLink to='/table' activeClassName="active"><div className="button">Table with verbs forms</div></NavLink>

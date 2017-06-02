@@ -73,21 +73,21 @@ export default class WordsTable extends React.Component {
             )
 
         return (
-            <div>
-                <SearchBlock onChange={this.Search} />
-                <table>
-                    <tbody>
-                        <tr className="table-header">
-                            <th>№</th>
-                            <th>Infinitive</th>
-                            <th>Past simple</th>
-                            <th>Past participle</th>
-                            <th>Russian translate</th>
-                        </tr>
-                        {cells}
-                    </tbody>
-                </table>
-            </div>
+                <div>
+                    <SearchBlock onChange={this.Search} />
+                    <table>
+                        <tbody>
+                            <tr className="table-header">
+                                <th>№</th>
+                                <th>Infinitive</th>
+                                <th>Past simple</th>
+                                <th>Past participle</th>
+                                <th>Russian translate</th>
+                            </tr>
+                            {cells}
+                        </tbody>
+                    </table>
+                </div>
         )
     }
 }
