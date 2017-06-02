@@ -44,7 +44,7 @@
 .test-button {
     height: 50px;
     width: 250px;
-    border: 2px solid red;
+    border: 2px solid wheat;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -60,7 +60,7 @@
 }
 
 .test-buttons > a.active > .test-button, .test-button:hover {
-    box-shadow: 0 0 10px red;
+    box-shadow: 0 0 10px wheat;
     background-color:transparent;
 }
 
