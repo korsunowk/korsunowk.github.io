@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 import logo from './logo.svg';
 import './App.css';
+import './styles/buttons.css'
 
-import WordsTable from './components/table-words/table';
 
 
 class App extends Component {
@@ -11,7 +11,13 @@ class App extends Component {
     return (
       <div className="App">
         <img src={logo} className="App-logo" alt="logo" />
-        <WordsTable />        
+        <div className="app-block">
+          <h1>Welcome to Past participle helper</h1>
+          <div className="buttons">
+            <div className="button">Table with verbs forms</div>
+            <div className="button">Test</div>
+          </div>
+        </div>
       </div>
     );
   }

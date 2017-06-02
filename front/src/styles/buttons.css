@@ -1,0 +1,24 @@
+.buttons {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    height: 50px;
+    width: 250px;
+    border: 2px solid green;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color:transparent;
+    box-shadow: 0 0 10px yellowgreen;
+}
+
