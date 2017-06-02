@@ -1,5 +1,6 @@
 .buttons {
-    margin-top: 55px;
+    width: 900px;
+    margin: 55px 0 55px 0;
     display: flex;
     justify-content: space-around;
 }
@@ -22,3 +23,12 @@
     box-shadow: 0 0 10px yellowgreen;
 }
 
+.buttons > a {
+    color: black;
+    text-decoration: none;
+}
+
+.buttons > a.active > .button {
+    box-shadow: 0 0 10px yellowgreen;
+    background-color: transparent;
+}

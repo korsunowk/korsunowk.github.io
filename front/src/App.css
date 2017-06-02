@@ -17,3 +17,7 @@
 body {
   font-family: 'Aclonica' !important;
 }
+
+.app-block > h1 {
+  text-align: center;
+}
