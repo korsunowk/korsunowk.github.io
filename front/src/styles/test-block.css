@@ -53,6 +53,11 @@ h2, h3, .test-header {
     margin-bottom: 0;
 }
 
+.test-test input.error {
+    border: 1px solid red;
+    box-shadow: 0 0 10px red;
+}
+
 hr {
     border-bottom: 1px solid yellowgreen;
     width: 100%;
