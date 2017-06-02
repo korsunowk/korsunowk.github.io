@@ -2,28 +2,38 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  NavLink
 } from 'react-router-dom'
+
+import RandomTest from './tests/random-test/random-test';
+import AlternateTest from './tests/alternate-test/alternate-test';
+
+import '../../styles/test-block.css';
 
 
 export default class TestBlock extends React.Component {
     render () {
         return (
-            <div className="test-buttons">
-              <Link to="/random">
-                <div className="test-button">
-                  Test with randow verbs
-                </div>
-              </Link>
-              <Link to="/alternate">
-                <div className="test-button">
-                  Test with alternate verbs
-                </div>
-              </Link>
+          <Router>
+            <div className="test-block">
+              <div className="test-buttons">
+                <NavLink to="/tests/random" activeClassName="active">
+                  <div className="test-button">
+                    Test with random verbs
+                  </div>
+                </NavLink>
+                <NavLink to="/tests/alternate" activeClassName="active">
+                  <div className="test-button">
+                    Test with alternate verbs
+                  </div>
+                </NavLink>
+              </div>
 
-              <Route path="/random"/>
-              <Route path="/alternate"/>
+              <Route path="/tests/random" component={RandomTest} />
+              <Route path="/tests/alternate" component={AlternateTest} />
             </div>
+          </Router>
+            
             )
     }
 }

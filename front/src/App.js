@@ -26,11 +26,11 @@ class App extends Component {
             <div>
               <div className="buttons">
                 <NavLink to='/table' activeClassName="active"><div className="button">Table with verbs forms</div></NavLink>
-                <NavLink to='/test' activeClassName="active"><div className="button">Test</div></NavLink>
+                <NavLink to='/tests' activeClassName="active"><div className="button">Some tests</div></NavLink>
               </div>
 
               <Route path="/table" component={WordsTable}/>
-              <Route path="/test" component={TestBlock}/>
+              <Route path="/tests" component={TestBlock}/>            
             </div>
           </Router>
         </div>
