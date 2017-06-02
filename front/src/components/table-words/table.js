@@ -26,13 +26,13 @@ export default class WordsTable extends React.Component {
             for(let i=1; i<=Object.keys(words).length; i++) {
                 if (e.target.value === i.toString())
                     new_words[i] = words[i];
-                else if (words[i]['russian_translate'].search(e.target.value.trim()) >= 0) 
+                else if (words[i]['russian_translate'].search(e.target.value.trim().toLowerCase()) >= 0) 
                     new_words[i] = words[i];
-                else if (words[i]['infinitive'].search(e.target.value.trim()) >= 0)
+                else if (words[i]['infinitive'].search(e.target.value.trim().toLowerCase()) >= 0)
                     new_words[i] = words[i];
-                else if (words[i]['past_simple'].search(e.target.value.trim()) >= 0)
+                else if (words[i]['past_simple'].search(e.target.value.trim().toLowerCase()) >= 0)
                     new_words[i] = words[i];
-                else if (words[i]['perfect'].search(e.target.value.trim()) >= 0)
+                else if (words[i]['perfect'].search(e.target.value.trim().toLowerCase()) >= 0)
                     new_words[i] = words[i];
             }
             this.setState({

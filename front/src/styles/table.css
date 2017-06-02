@@ -41,6 +41,8 @@ tr > td:nth-child(3) {
 
 tr > td:last-child {
     width: 420px;
+    font-family: 'Pattaya';
+    font-size: 17px;
 }
 
 tr {
