@@ -4,9 +4,10 @@
   "homepage": "https://korsunowk.github.io",
   "private": true,
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-router-dom": "^4.1.1"    
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
