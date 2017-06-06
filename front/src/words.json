@@ -1,6 +1,6 @@
 {
     "1": {
-        "past_simple": "abode ",
+        "past_simple": "abode",
         "infinitive": "abide",
         "perfect": "abode",
         "russian_translate": "пребывать, придерживаться чего-либо"
@@ -12,21 +12,21 @@
         "russian_translate": "возникать, подниматься"
     },
     "3": {
-        "past_simple": "awoke ",
+        "past_simple": "awoke",
         "infinitive": "awake",
-        "perfect": "awaked ",
+        "perfect": "awaked",
         "russian_translate": "будить, просыпаться"
     },
     "4": {
-        "past_simple": "was ",
+        "past_simple": "was",
         "infinitive": "be",
         "perfect": "been",
         "russian_translate": "быть, являться"
     },
     "5": {
-        "past_simple": "bore ",
-        "infinitive": "bear ",
-        "perfect": "born ",
+        "past_simple": "bore",
+        "infinitive": "bear",
+        "perfect": "born",
         "russian_translate": "носить, рождать"
     },
     "6": {
@@ -36,57 +36,57 @@
         "russian_translate": "бить"
     },
     "7": {
-        "past_simple": "became ",
+        "past_simple": "became",
         "infinitive": "become",
-        "perfect": "become ",
+        "perfect": "become",
         "russian_translate": "становиться, делаться"
     },
     "8": {
-        "past_simple": "befell ",
-        "infinitive": "befall ",
-        "perfect": "befallen ",
+        "past_simple": "befell",
+        "infinitive": "befall",
+        "perfect": "befallen",
         "russian_translate": "случаться"
     },
     "9": {
-        "past_simple": "began ",
+        "past_simple": "began",
         "infinitive": "begin",
         "perfect": "begun",
         "russian_translate": "начинать(ся)"
     },
     "10": {
-        "past_simple": "beheld ",
-        "infinitive": "behold ",
-        "perfect": "beheld ",
+        "past_simple": "beheld",
+        "infinitive": "behold",
+        "perfect": "beheld",
         "russian_translate": "вглядываться, замечать"
     },
     "11": {
         "past_simple": "bent",
-        "infinitive": "bend ",
+        "infinitive": "bend",
         "perfect": "bent",
         "russian_translate": "гнуть(ся), сгибать(ся)"
     },
     "12": {
-        "past_simple": "besought ",
-        "infinitive": "beseech ",
-        "perfect": "besought ",
+        "past_simple": "besought",
+        "infinitive": "beseech",
+        "perfect": "besought",
         "russian_translate": "умолять, упрашивать"
     },
     "13": {
-        "past_simple": "beset ",
-        "infinitive": "beset ",
+        "past_simple": "beset",
+        "infinitive": "beset",
         "perfect": "beset",
         "russian_translate": "окружать, осаждать"
     },
     "14": {
-        "past_simple": "bet ",
-        "infinitive": "bet ",
-        "perfect": "bet ",
+        "past_simple": "bet",
+        "infinitive": "bet",
+        "perfect": "bet",
         "russian_translate": "держать пари"
     },
     "15": {
-        "past_simple": "bid ",
-        "infinitive": "bid ",
-        "perfect": "bid ",
+        "past_simple": "bid",
+        "infinitive": "bid",
+        "perfect": "bid",
         "russian_translate": "предлагать цену, велеть, просить"
     },
     "16": {
@@ -97,506 +97,506 @@
     },
     "17": {
         "past_simple": "bit",
-        "infinitive": "bite ",
-        "perfect": "bitten ",
+        "infinitive": "bite",
+        "perfect": "bitten",
         "russian_translate": "кусать(ся)"
     },
     "18": {
-        "past_simple": "bled ",
-        "infinitive": "bleed ",
-        "perfect": "bled ",
+        "past_simple": "bled",
+        "infinitive": "bleed",
+        "perfect": "bled",
         "russian_translate": "кровоточить, опорожнять"
     },
     "19": {
-        "past_simple": "blew ",
-        "infinitive": "blow ",
+        "past_simple": "blew",
+        "infinitive": "blow",
         "perfect": "blown",
         "russian_translate": "дуть"
     },
     "20": {
         "past_simple": "broke",
-        "infinitive": "break ",
-        "perfect": "broken ",
+        "infinitive": "break",
+        "perfect": "broken",
         "russian_translate": "ломать, прерывать, разбивать"
     },
     "21": {
-        "past_simple": "bred ",
-        "infinitive": "breed ",
-        "perfect": "bred ",
+        "past_simple": "bred",
+        "infinitive": "breed",
+        "perfect": "bred",
         "russian_translate": "порождать, разводить, выводить"
     },
     "22": {
         "past_simple": "brought",
-        "infinitive": "bring ",
+        "infinitive": "bring",
         "perfect": "brought",
         "russian_translate": "приносить, приводить"
     },
     "23": {
-        "past_simple": "broadcast ",
-        "infinitive": "broadcast ",
+        "past_simple": "broadcast",
+        "infinitive": "broadcast",
         "perfect": "broadcast",
         "russian_translate": "вещать, распространять"
     },
     "24": {
-        "past_simple": "built ",
-        "infinitive": "build ",
-        "perfect": "built ",
+        "past_simple": "built",
+        "infinitive": "build",
+        "perfect": "built",
         "russian_translate": "строить, встраивать"
     },
     "25": {
         "past_simple": "burnt",
-        "infinitive": "burn ",
-        "perfect": "burnt ",
+        "infinitive": "burn",
+        "perfect": "burnt",
         "russian_translate": "гореть, сжигать"
     },
     "26": {
-        "past_simple": "burst ",
-        "infinitive": "burst ",
-        "perfect": "burst ",
+        "past_simple": "burst",
+        "infinitive": "burst",
+        "perfect": "burst",
         "russian_translate": "взрывать(ся)"
     },
     "27": {
-        "past_simple": "bought ",
+        "past_simple": "bought",
         "infinitive": "buy",
-        "perfect": "bought ",
+        "perfect": "bought",
         "russian_translate": "покупать"
     },
     "28": {
-        "past_simple": "could ",
-        "infinitive": "can ",
+        "past_simple": "could",
+        "infinitive": "can",
         "perfect": "could",
         "russian_translate": "мочь физически"
     },
     "29": {
-        "past_simple": "cast ",
-        "infinitive": "cast ",
-        "perfect": "cast ",
+        "past_simple": "cast",
+        "infinitive": "cast",
+        "perfect": "cast",
         "russian_translate": "бросать, лить (металл)"
     },
     "30": {
-        "past_simple": "caught ",
-        "infinitive": "catch ",
-        "perfect": "caught ",
+        "past_simple": "caught",
+        "infinitive": "catch",
+        "perfect": "caught",
         "russian_translate": "ловить, схватывать"
     },
     "31": {
-        "past_simple": "chose ",
-        "infinitive": "choose ",
-        "perfect": "chosen ",
+        "past_simple": "chose",
+        "infinitive": "choose",
+        "perfect": "chosen",
         "russian_translate": "выбирать"
     },
     "32": {
-        "past_simple": "clung ",
-        "infinitive": "cling ",
-        "perfect": "clung ",
+        "past_simple": "clung",
+        "infinitive": "cling",
+        "perfect": "clung",
         "russian_translate": "прилипать, цеплять, льнуть"
     },
     "33": {
-        "past_simple": "cleft ",
-        "infinitive": "cleave ",
-        "perfect": "cloven ",
+        "past_simple": "cleft",
+        "infinitive": "cleave",
+        "perfect": "cloven",
         "russian_translate": "рассечь, расколоть"
     },
     "34": {
-        "past_simple": "clothed ",
-        "infinitive": "clothe ",
-        "perfect": "clothed ",
+        "past_simple": "clothed",
+        "infinitive": "clothe",
+        "perfect": "clothed",
         "russian_translate": "одеть, одевать"
     },
     "35": {
-        "past_simple": "came ",
-        "infinitive": "come ",
-        "perfect": "come ",
+        "past_simple": "came",
+        "infinitive": "come",
+        "perfect": "come",
         "russian_translate": "приходить"
     },
     "36": {
-        "past_simple": "cost ",
-        "infinitive": "cost ",
-        "perfect": "cost ",
+        "past_simple": "cost",
+        "infinitive": "cost",
+        "perfect": "cost",
         "russian_translate": "оценивать, стоить"
     },
     "37": {
-        "past_simple": "crept ",
-        "infinitive": "creep ",
-        "perfect": "crept ",
+        "past_simple": "crept",
+        "infinitive": "creep",
+        "perfect": "crept",
         "russian_translate": "ползать"
     },
     "38": {
-        "past_simple": "cut ",
-        "infinitive": "cut ",
-        "perfect": "cut ",
+        "past_simple": "cut",
+        "infinitive": "cut",
+        "perfect": "cut",
         "russian_translate": "резать, обрезать"
     },
     "39": {
-        "past_simple": "durst ",
-        "infinitive": "dare ",
-        "perfect": "dared ",
+        "past_simple": "durst",
+        "infinitive": "dare",
+        "perfect": "dared",
         "russian_translate": "сметь"
     },
     "40": {
-        "past_simple": "dealt ",
-        "infinitive": "deal ",
-        "perfect": "dealt ",
+        "past_simple": "dealt",
+        "infinitive": "deal",
+        "perfect": "dealt",
         "russian_translate": "иметь дело, торговать, рассматривать вопрос"
     },
     "41": {
-        "past_simple": "dug ",
-        "infinitive": "dig ",
-        "perfect": "dug ",
+        "past_simple": "dug",
+        "infinitive": "dig",
+        "perfect": "dug",
         "russian_translate": "копать"
     },
     "42": {
-        "past_simple": "dove ",
-        "infinitive": "dive ",
-        "perfect": "dived ",
+        "past_simple": "dove",
+        "infinitive": "dive",
+        "perfect": "dived",
         "russian_translate": "нырять"
     },
     "43": {
-        "past_simple": "did ",
-        "infinitive": "do/does ",
-        "perfect": "done ",
+        "past_simple": "did",
+        "infinitive": "do/does",
+        "perfect": "done",
         "russian_translate": "делать"
     },
     "44": {
-        "past_simple": "drew ",
-        "infinitive": "draw ",
-        "perfect": "drawn ",
+        "past_simple": "drew",
+        "infinitive": "draw",
+        "perfect": "drawn",
         "russian_translate": "тащить, чертить"
     },
     "45": {
-        "past_simple": "dreamt ",
-        "infinitive": "dream ",
-        "perfect": "dreamt ",
+        "past_simple": "dreamt",
+        "infinitive": "dream",
+        "perfect": "dreamt",
         "russian_translate": "видеть сны, мечтать"
     },
     "46": {
-        "past_simple": "drank ",
-        "infinitive": "drink ",
-        "perfect": "drunk ",
+        "past_simple": "drank",
+        "infinitive": "drink",
+        "perfect": "drunk",
         "russian_translate": "пить, выпивать"
     },
     "47": {
-        "past_simple": "drove ",
-        "infinitive": "drive ",
-        "perfect": "driven ",
+        "past_simple": "drove",
+        "infinitive": "drive",
+        "perfect": "driven",
         "russian_translate": "ехать, везти, водить, гнать"
     },
     "48": {
-        "past_simple": "dwelt ",
-        "infinitive": "dwell ",
-        "perfect": "dwelt ",
+        "past_simple": "dwelt",
+        "infinitive": "dwell",
+        "perfect": "dwelt",
         "russian_translate": "обитать, пребывать, задерживаться на чем-либо"
     },
     "49": {
-        "past_simple": "ate ",
-        "infinitive": "eat ",
-        "perfect": "eaten ",
+        "past_simple": "ate",
+        "infinitive": "eat",
+        "perfect": "eaten",
         "russian_translate": "есть, принимать пищу, кушать"
     },
     "50": {
-        "past_simple": "fell ",
-        "infinitive": "fall ",
-        "perfect": "fallen ",
+        "past_simple": "fell",
+        "infinitive": "fall",
+        "perfect": "fallen",
         "russian_translate": "падать"
     },
     "51": {
-        "past_simple": "fed ",
-        "infinitive": "feed ",
-        "perfect": "fed ",
+        "past_simple": "fed",
+        "infinitive": "feed",
+        "perfect": "fed",
         "russian_translate": "кормить(ся)"
     },
     "52": {
-        "past_simple": "felt ",
-        "infinitive": "feel ",
-        "perfect": "felt ",
+        "past_simple": "felt",
+        "infinitive": "feel",
+        "perfect": "felt",
         "russian_translate": "чувствовать"
     },
     "53": {
-        "past_simple": "fought ",
-        "infinitive": "fight ",
-        "perfect": "fought ",
+        "past_simple": "fought",
+        "infinitive": "fight",
+        "perfect": "fought",
         "russian_translate": "бороться, сражаться"
     },
     "54": {
-        "past_simple": "found ",
-        "infinitive": "find ",
-        "perfect": "found ",
+        "past_simple": "found",
+        "infinitive": "find",
+        "perfect": "found",
         "russian_translate": "находить"
     },
     "55": {
-        "past_simple": "fit ",
-        "infinitive": "fit ",
-        "perfect": "fit ",
+        "past_simple": "fit",
+        "infinitive": "fit",
+        "perfect": "fit",
         "russian_translate": "подходить, годиться"
     },
     "56": {
-        "past_simple": "fled ",
-        "infinitive": "flee ",
-        "perfect": "fled ",
+        "past_simple": "fled",
+        "infinitive": "flee",
+        "perfect": "fled",
         "russian_translate": "бежать, спасаться бегством"
     },
     "57": {
-        "past_simple": "flung ",
-        "infinitive": "fling ",
-        "perfect": "flung ",
+        "past_simple": "flung",
+        "infinitive": "fling",
+        "perfect": "flung",
         "russian_translate": "кидать, бросать"
     },
     "58": {
-        "past_simple": "flew ",
-        "infinitive": "fly ",
-        "perfect": "flown ",
+        "past_simple": "flew",
+        "infinitive": "fly",
+        "perfect": "flown",
         "russian_translate": "летать, пролетать"
     },
     "59": {
-        "past_simple": "forbade ",
-        "infinitive": "forbid ",
-        "perfect": "forbidden ",
+        "past_simple": "forbade",
+        "infinitive": "forbid",
+        "perfect": "forbidden",
         "russian_translate": "запрещать"
     },
     "60": {
-        "past_simple": "forecast;",
-        "infinitive": "forecast ",
-        "perfect": "forecast;",
-        "russian_translate": "предвидеть,"
+        "past_simple": "forecast",
+        "infinitive": "forecast",
+        "perfect": "forecast",
+        "russian_translate": "предвидеть"
     },
     "61": {
-        "past_simple": "forgot ",
-        "infinitive": "forget ",
-        "perfect": "forgotten ",
+        "past_simple": "forgot",
+        "infinitive": "forget",
+        "perfect": "forgotten",
         "russian_translate": "забывать"
     },
     "62": {
-        "past_simple": "forewent ",
-        "infinitive": "forego ",
-        "perfect": "foregone ",
+        "past_simple": "forewent",
+        "infinitive": "forego",
+        "perfect": "foregone",
         "russian_translate": "отказываться, воздерживаться"
     },
     "63": {
-        "past_simple": "foretold ",
-        "infinitive": "foretell ",
-        "perfect": "foretold ",
+        "past_simple": "foretold",
+        "infinitive": "foretell",
+        "perfect": "foretold",
         "russian_translate": "предсказывать, прогнозировать"
     },
     "64": {
-        "past_simple": "forgave ",
-        "infinitive": "forgive ",
-        "perfect": "forgiven ",
-        "russian_translate": "прощать,"
+        "past_simple": "forgave",
+        "infinitive": "forgive",
+        "perfect": "forgiven",
+        "russian_translate": "прощать"
     },
     "65": {
-        "past_simple": "forsook ",
-        "infinitive": "forsake ",
-        "perfect": "forsaken ",
+        "past_simple": "forsook",
+        "infinitive": "forsake",
+        "perfect": "forsaken",
         "russian_translate": "бросать, отказываться"
     },
     "66": {
-        "past_simple": "froze ",
-        "infinitive": "freeze ",
-        "perfect": "frozen ",
+        "past_simple": "froze",
+        "infinitive": "freeze",
+        "perfect": "frozen",
         "russian_translate": "замерзать, замораживать"
     },
     "67": {
-        "past_simple": "got ",
-        "infinitive": "get ",
-        "perfect": "got ",
+        "past_simple": "got",
+        "infinitive": "get",
+        "perfect": "got",
         "russian_translate": "получать, становиться"
     },
     "68": {
-        "past_simple": "gilt ",
-        "infinitive": "gild ",
-        "perfect": "gilt ",
+        "past_simple": "gilt",
+        "infinitive": "gild",
+        "perfect": "gilt",
         "russian_translate": "позолотить"
     },
     "69": {
-        "past_simple": "gave ",
-        "infinitive": "give ",
-        "perfect": "given ",
+        "past_simple": "gave",
+        "infinitive": "give",
+        "perfect": "given",
         "russian_translate": "давать"
     },
     "70": {
-        "past_simple": "went ",
-        "infinitive": "go/goes ",
-        "perfect": "gone ",
+        "past_simple": "went",
+        "infinitive": "go/goes",
+        "perfect": "gone",
         "russian_translate": "идти, ехать"
     },
     "71": {
-        "past_simple": "ground ",
-        "infinitive": "grind ",
-        "perfect": "ground ",
+        "past_simple": "ground",
+        "infinitive": "grind",
+        "perfect": "ground",
         "russian_translate": "точить, молоть"
     },
     "72": {
-        "past_simple": "grew ",
-        "infinitive": "grow ",
-        "perfect": "grown ",
+        "past_simple": "grew",
+        "infinitive": "grow",
+        "perfect": "grown",
         "russian_translate": "расти, выращивать"
     },
     "73": {
-        "past_simple": "hung ",
-        "infinitive": "hang ",
-        "perfect": "hung ",
+        "past_simple": "hung",
+        "infinitive": "hang",
+        "perfect": "hung",
         "russian_translate": "висеть, вешать"
     },
     "74": {
-        "past_simple": "had ",
-        "infinitive": "have ",
-        "perfect": "had ",
+        "past_simple": "had",
+        "infinitive": "have",
+        "perfect": "had",
         "russian_translate": "иметь, обладать"
     },
     "75": {
-        "past_simple": "hewed ",
-        "infinitive": "hew ",
-        "perfect": "hewed ",
+        "past_simple": "hewed",
+        "infinitive": "hew",
+        "perfect": "hewed",
         "russian_translate": "рубить, тесать"
     },
     "76": {
-        "past_simple": "heard ",
-        "infinitive": "hear ",
-        "perfect": "heard ",
+        "past_simple": "heard",
+        "infinitive": "hear",
+        "perfect": "heard",
         "russian_translate": "слышать"
     },
     "77": {
-        "past_simple": "hid ",
-        "infinitive": "hide ",
-        "perfect": "hidden ",
+        "past_simple": "hid",
+        "infinitive": "hide",
+        "perfect": "hidden",
         "russian_translate": "прятать, прятаться"
     },
     "78": {
-        "past_simple": "hit ",
-        "infinitive": "hit ",
-        "perfect": "hit ",
+        "past_simple": "hit",
+        "infinitive": "hit",
+        "perfect": "hit",
         "russian_translate": "ударять, поражать"
     },
     "79": {
-        "past_simple": "held ",
-        "infinitive": "hold ",
-        "perfect": "held ",
+        "past_simple": "held",
+        "infinitive": "hold",
+        "perfect": "held",
         "russian_translate": "держать, поддерживать (владеть)"
     },
     "80": {
-        "past_simple": "hurt ",
-        "infinitive": "hurt ",
-        "perfect": "hurt ",
+        "past_simple": "hurt",
+        "infinitive": "hurt",
+        "perfect": "hurt",
         "russian_translate": "повредить, причинять боль, ранить"
     },
     "81": {
-        "past_simple": "kept ",
-        "infinitive": "keep ",
-        "perfect": "kept ",
+        "past_simple": "kept",
+        "infinitive": "keep",
+        "perfect": "kept",
         "russian_translate": "держать, хранить"
     },
     "82": {
-        "past_simple": "knelt ",
-        "infinitive": "kneel ",
-        "perfect": "knelt ",
+        "past_simple": "knelt",
+        "infinitive": "kneel",
+        "perfect": "knelt",
         "russian_translate": "становиться на колени"
     },
     "83": {
-        "past_simple": "knit ",
-        "infinitive": "knit ",
-        "perfect": "knit ",
+        "past_simple": "knit",
+        "infinitive": "knit",
+        "perfect": "knit",
         "russian_translate": "вязать"
     },
     "84": {
-        "past_simple": "knew ",
-        "infinitive": "know ",
-        "perfect": "known ",
+        "past_simple": "knew",
+        "infinitive": "know",
+        "perfect": "known",
         "russian_translate": "знать"
     },
     "85": {
-        "past_simple": "laid ",
-        "infinitive": "lay ",
-        "perfect": "laid ",
+        "past_simple": "laid",
+        "infinitive": "lay",
+        "perfect": "laid",
         "russian_translate": "класть"
     },
     "86": {
-        "past_simple": "led ",
-        "infinitive": "lead ",
-        "perfect": "led ",
+        "past_simple": "led",
+        "infinitive": "lead",
+        "perfect": "led",
         "russian_translate": "вести, сопровождать"
     },
     "87": {
-        "past_simple": "leant ",
-        "infinitive": "lean ",
-        "perfect": "leant ",
+        "past_simple": "leant",
+        "infinitive": "lean",
+        "perfect": "leant",
         "russian_translate": "опираться, прислоняться"
     },
     "88": {
-        "past_simple": "leapt ",
-        "infinitive": "leap ",
-        "perfect": "leapt ",
+        "past_simple": "leapt",
+        "infinitive": "leap",
+        "perfect": "leapt",
         "russian_translate": "прыгать"
     },
     "89": {
-        "past_simple": "learnt ",
-        "infinitive": "learn ",
-        "perfect": "learnt ",
+        "past_simple": "learnt",
+        "infinitive": "learn",
+        "perfect": "learnt",
         "russian_translate": "учиться, узнавать"
     },
     "90": {
-        "past_simple": "left ",
-        "infinitive": "leave ",
-        "perfect": "left ",
+        "past_simple": "left",
+        "infinitive": "leave",
+        "perfect": "left",
         "russian_translate": "оставлять, уезжать"
     },
     "91": {
-        "past_simple": "lent ",
-        "infinitive": "lend ",
-        "perfect": "lent ",
+        "past_simple": "lent",
+        "infinitive": "lend",
+        "perfect": "lent",
         "russian_translate": "одалживать, давать взаймы"
     },
     "92": {
-        "past_simple": "let ",
-        "infinitive": "let ",
-        "perfect": "let ",
+        "past_simple": "let",
+        "infinitive": "let",
+        "perfect": "let",
         "russian_translate": "позволять, сдавать в наём"
     },
     "93": {
-        "past_simple": "lay ",
-        "infinitive": "lie ",
-        "perfect": "lain ",
+        "past_simple": "lay",
+        "infinitive": "lie",
+        "perfect": "lain",
         "russian_translate": "лежать"
     },
     "94": {
-        "past_simple": "lit ",
-        "infinitive": "light ",
-        "perfect": "lit ",
+        "past_simple": "lit",
+        "infinitive": "light",
+        "perfect": "lit",
         "russian_translate": "зажигать, освещать"
     },
     "95": {
-        "past_simple": "lost ",
-        "infinitive": "lose ",
-        "perfect": "lost ",
+        "past_simple": "lost",
+        "infinitive": "lose",
+        "perfect": "lost",
         "russian_translate": "терять"
     },
     "96": {
-        "past_simple": "made ",
-        "infinitive": "make ",
-        "perfect": "made ",
+        "past_simple": "made",
+        "infinitive": "make",
+        "perfect": "made",
         "russian_translate": "делать, заставлять"
     },
     "97": {
-        "past_simple": "might ",
-        "infinitive": "may ",
-        "perfect": "might ",
+        "past_simple": "might",
+        "infinitive": "may",
+        "perfect": "might",
         "russian_translate": "мочь, иметь право"
     },
     "98": {
-        "past_simple": "meant ",
-        "infinitive": "mean ",
-        "perfect": "meant ",
+        "past_simple": "meant",
+        "infinitive": "mean",
+        "perfect": "meant",
         "russian_translate": "значить, подразумевать"
     },
     "99": {
-        "past_simple": "met ",
-        "infinitive": "meet ",
-        "perfect": "met ",
+        "past_simple": "met",
+        "infinitive": "meet",
+        "perfect": "met",
         "russian_translate": "встречать, знакомиться"
     },
     "100": {
-        "past_simple": "misheard ",
-        "infinitive": "mishear ",
-        "perfect": "misheard ",
+        "past_simple": "misheard",
+        "infinitive": "mishear",
+        "perfect": "misheard",
         "russian_translate": "ослышаться"
     },
     "101": {
