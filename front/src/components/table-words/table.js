@@ -2,6 +2,8 @@ import React from 'react';
 import TableCell from './table-cell';
 import SearchBlock from './search-block';
 
+import store from '../../store'
+
 import '../../styles/table.css';
 var words = require('../../words.json');
 
@@ -51,43 +53,47 @@ export default class WordsTable extends React.Component {
     }
 
     render () {
-        let cells = [];
-        let words_exist = false;
+        let _store = store.getState();
+        if (_store.table) {
+            let cells = [];
+            let words_exist = false;
 
-        for(let key in this.state._words) {
-            cells.push(
-                <TableCell
-                    russian={this.state._words[key]['russian_translate']}
-                    infinitive={this.state._words[key]['infinitive']}
-                    past_simple={this.state._words[key]['past_simple']}
-                    perfect={this.state._words[key]['perfect']}
-                    key={key}
-                    number={key}
-                />
+            for(let key in this.state._words) {
+                cells.push(
+                    <TableCell
+                        russian={this.state._words[key]['russian_translate']}
+                        infinitive={this.state._words[key]['infinitive']}
+                        past_simple={this.state._words[key]['past_simple']}
+                        perfect={this.state._words[key]['perfect']}
+                        key={key}
+                        number={key}
+                    />
+                )
+                words_exist = true;
+            }
+            if (!words_exist)
+                cells.push(
+                    <TableCell empty key={0} />
+                )
+
+            return (
+                    <div>
+                        <SearchBlock onChange={this.Search} />
+                        <table>
+                            <tbody>
+                                <tr className="table-header">
+                                    <th>№</th>
+                                    <th>Infinitive</th>
+                                    <th>Past simple</th>
+                                    <th>Past participle</th>
+                                    <th>Russian translate</th>
+                                </tr>
+                                {cells}
+                            </tbody>
+                        </table>
+                    </div>
             )
-            words_exist = true;
         }
-        if (!words_exist)
-            cells.push(
-                <TableCell empty key={0} />
-            )
-
-        return (
-                <div>
-                    <SearchBlock onChange={this.Search} />
-                    <table>
-                        <tbody>
-                            <tr className="table-header">
-                                <th>№</th>
-                                <th>Infinitive</th>
-                                <th>Past simple</th>
-                                <th>Past participle</th>
-                                <th>Russian translate</th>
-                            </tr>
-                            {cells}
-                        </tbody>
-                    </table>
-                </div>
-        )
+        return null
     }
 }

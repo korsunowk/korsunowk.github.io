@@ -17,12 +17,17 @@ import AlternateTranslateTest from './components/table-tests/tests/translate-tes
 import Footer from './components/footer';
 
 import logo from './logo.svg';
-
+import store from './store';
 import './App.css';
 import './styles/buttons.css'
 
 
 class App extends Component {
+  TestTest = (e) => {
+    store.dispatch({
+        type: 'TOGGLE_TABLE'
+    });
+  }
   render() {
     return (
       <div className="App">
@@ -36,7 +41,7 @@ class App extends Component {
                   <div className="button">Table with verbs forms</div>
                 </NavLink>
                 <div className="btn-group">
-                  <div className="button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div className="button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick={this.TestTest}>
                     Some tests <span className="caret"></span>
                   </div>
                   <TestBlock />
