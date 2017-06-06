@@ -65,6 +65,7 @@ hr {
 }
 
 .test-block {
+    width: 1000px;
     border: 1px solid yellowgreen;
     margin-bottom: 25px;
     padding: 25px;

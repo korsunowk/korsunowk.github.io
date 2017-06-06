@@ -1,3 +1,7 @@
+.table-block {
+    width: 1000px;
+}
+
 table {
     margin-top: 10px;
     margin-bottom: 60px;
@@ -7,12 +11,13 @@ table {
     border-radius: 6px;
     border-collapse: collapse;
     
+    width: 100%;
     box-shadow: 0 0 10px yellowgreen;
 }
 
 tbody {
     min-width: 980px;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 tr th {
@@ -44,7 +49,7 @@ tr > td:nth-child(3) {
 tr > td:last-child {
     width: 420px;
     font-family: 'Pattaya';
-    font-size: 17px;
+    font-size: 19px;
 }
 
 tr {
