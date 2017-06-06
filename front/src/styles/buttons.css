@@ -16,6 +16,10 @@
     font-size: 17px;
     background-color: white;
     cursor: pointer;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
 }
 
 .button:hover {
@@ -41,6 +45,10 @@
     font-size: 17px;
     background-color: white;
     cursor: pointer;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
 }
 
 .dropdown-menu {

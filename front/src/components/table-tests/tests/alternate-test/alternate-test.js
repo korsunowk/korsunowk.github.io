@@ -23,6 +23,13 @@ export default class AlternateTest extends React.Component {
         this.changeStateToNext = this.changeStateToNext.bind(this);
         this.addErrorOnInput = this.addErrorOnInput.bind(this);
         this.cleanInputs = this.cleanInputs.bind(this);
+        this.EnterPress = this.EnterPress.bind(this);
+    }
+
+    EnterPress(e) {
+        if (e.key == 'Enter') {
+            this.CheckWords();
+        }
     }
 
     AddFocus(e) {
@@ -83,7 +90,7 @@ export default class AlternateTest extends React.Component {
             <div className="test-block">
                 <h2>Alternate test</h2>
                 <h3>Enter the correct forms of the displayed verb in the appropriate fields.</h3>
-                <div className="test-body">
+                <div className="test-body" onKeyPress={(e) => this.EnterPress(e)}>
                     <div className="test-header">
                         <span className="verb-number">
                             {this.state.current_word}.
