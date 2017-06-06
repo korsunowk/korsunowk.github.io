@@ -11,6 +11,8 @@ import TestBlock from './components/table-tests/test-block';
 import RandomTest from './components/table-tests/tests/random-test/random-test';
 import AlternateTest from './components/table-tests/tests/alternate-test/alternate-test';
 
+import Footer from './components/footer';
+
 import logo from './logo.svg';
 
 import './App.css';
@@ -44,9 +46,7 @@ class App extends Component {
             </div>
           </Router>
         </div>
-        {/*<footer>
-          My site
-        </footer>*/}
+        <Footer />
       </div>
     );
   }
