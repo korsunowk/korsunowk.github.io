@@ -1,7 +1,3 @@
-.test-block {
-    display: flex;
-}
-
 h2, h3, .test-header {
     text-align: center;
 }
@@ -47,6 +43,7 @@ h2, h3, .test-header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
+    font-size: 18px;
 }
 
 .test-test input {
@@ -63,8 +60,9 @@ hr {
     width: 100%;
 }
 
-.alternate-test {
+.test-block {
     border: 1px solid yellowgreen;
+    margin-bottom: 25px;
     padding: 25px;
     border-radius: 15px;
 }

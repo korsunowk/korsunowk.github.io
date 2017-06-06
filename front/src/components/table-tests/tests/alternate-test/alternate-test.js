@@ -80,7 +80,7 @@ export default class AlternateTest extends React.Component {
 
     render () {
         return (
-            <div className="alternate-test">
+            <div className="test-block">
                 <h2>Alternate test</h2>
                 <h3>Enter the correct forms of the displayed verb in the appropriate fields.</h3>
                 <div className="test-body">

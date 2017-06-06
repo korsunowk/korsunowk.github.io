@@ -5,14 +5,6 @@
     justify-content: space-around;
 }
 
-.test-buttons {
-    width: 300px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
 .button {
     height: 50px;
     width: 250px;
@@ -43,9 +35,6 @@
 
 .test-button {
     height: 50px;
-    width: 250px;
-    border: 2px solid wheat;
-    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,24 +43,37 @@
     cursor: pointer;
 }
 
-.test-buttons > a {
+.dropdown-menu {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.dropdown-menu > a {
     color: black;
     text-decoration: none;
 }
 
-.test-buttons > a.active > .test-button, .test-button:hover {
-    box-shadow: 0 0 10px wheat;
-    background-color:transparent;
+.dropdown-menu > a.active > .test-button, .test-button:hover {
+    background-color: cornsilk;
+    border-radius: 17px;
+    margin: 0 3px 0 3px;
 }
 
 .check {
     align-self: center;
     margin-top: 35px;
     background-color: white;
-    border: 2px solid blue;
 }
 
 .check:hover {
     box-shadow: 0 0 10px aqua;
     background-color: transparent;
 }
+
+.caret {
+    border-top: 7px dashed;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    margin-left: 15px;
+}
+
