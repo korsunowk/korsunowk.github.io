@@ -19,6 +19,12 @@ export default class TestBlock extends React.Component {
                 Test with alternate verbs
               </li>
             </NavLink>
+            <li role="separator" className="divider"></li>
+            <NavLink to="/tests/translate" activeClassName="active">
+              <li className="test-button">
+                Russian translate test
+              </li>
+            </NavLink>
           </ul>
         )
     }
