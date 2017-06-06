@@ -27,7 +27,7 @@ export default class AlternateTest extends React.Component {
     }
 
     EnterPress(e) {
-        if (e.key == 'Enter') {
+        if (e.key === 'Enter') {
             this.CheckWords();
         }
     }
