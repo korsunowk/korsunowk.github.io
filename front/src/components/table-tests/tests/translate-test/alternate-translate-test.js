@@ -2,37 +2,17 @@ import React from 'react';
 
 var words = require('../../../../words.json');
 
-function shuffleArray(d) {
-  for (var c = d.length - 1; c > 0; c--) {
-    var b = Math.floor(Math.random() * (c + 1));
-    var a = d[c];
-    d[c] = d[b];
-    d[b] = a;
-  }
-  return d
-};
-
-
-export default class RandomTranslateTest extends React.Component {
+export default class AlternateTranslateTest extends React.Component {
     constructor() {
         super();
 
-        let _words = [];
-        
+        let _words = {};
         for(let i=1; i<= Object.keys(words).length; i++)
-            _words.push({
-                'number': i,
-                'infinitive': words[i]['infinitive'],
-                'russian_translate': words[i]['russian_translate'],
-                'past_simple': words[i]['past_simple'],
-                'perfect': words[i]['perfect']
-            })
-    
-        _words = shuffleArray(_words);
+            _words[i] = words[i];
 
         this.state = {
             _words: _words,
-            current_word: 0,
+            current_word: 1,
 
             translate_error: false
         };
@@ -110,7 +90,7 @@ export default class RandomTranslateTest extends React.Component {
                 <div className="test-body" onKeyPress={(e) => this.EnterPress(e)}>
                     <div className="test-header">
                         <span className="verb-number">
-                            {this.state._words[this.state.current_word]['number']}.
+                            {this.state.current_word}.
                         </span>
                         <span className="verb-infinitive">
                             {this.state._words[this.state.current_word]['infinitive']}

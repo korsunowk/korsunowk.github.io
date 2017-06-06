@@ -10,7 +10,9 @@ import TestBlock from './components/table-tests/test-block';
 
 import RandomTest from './components/table-tests/tests/random-test/random-test';
 import AlternateTest from './components/table-tests/tests/alternate-test/alternate-test';
-import TranslateTest from './components/table-tests/tests/translate-test/random-translate-test';
+
+import RandomTranslateTest from './components/table-tests/tests/translate-test/random-translate-test';
+import AlternateTranslateTest from './components/table-tests/tests/translate-test/alternate-translate-test';
 
 import Footer from './components/footer';
 
@@ -41,9 +43,12 @@ class App extends Component {
                 </div>
               </div>
               
-              <Route path="/tests/translate" component={TranslateTest} />
               <Route path="/tests/random" component={RandomTest} />
               <Route path="/tests/alternate" component={AlternateTest} />
+
+              <Route path="/tests/random-translate" component={RandomTranslateTest} />
+              <Route path="/tests/alternate-translate" component={AlternateTranslateTest} />
+
               <Route path="/table" component={WordsTable}/>
             </div>
           </Router>

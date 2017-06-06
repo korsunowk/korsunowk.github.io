@@ -20,9 +20,15 @@ export default class TestBlock extends React.Component {
               </li>
             </NavLink>
             <li role="separator" className="divider"></li>
-            <NavLink to="/tests/translate" activeClassName="active">
+            <NavLink to="/tests/random-translate" activeClassName="active">
               <li className="test-button">
-                Russian translate test
+                 Random translate test
+              </li>
+            </NavLink>
+            <li role="separator" className="divider"></li>
+            <NavLink to="/tests/alternate-translate" activeClassName="active">
+              <li className="test-button">
+                Alternate translate test
               </li>
             </NavLink>
           </ul>
