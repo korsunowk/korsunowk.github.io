@@ -71,3 +71,23 @@ hr {
     padding: 25px;
     border-radius: 15px;
 }
+
+@media screen and (max-width: 450px) {
+    .test-block {
+        width: 350px;
+        height: 670px;
+        margin-left: 35px;
+    }
+
+    .test-test {
+        width: 350px;
+    }
+
+    .test-test label {
+        flex-direction: column;
+    }
+
+    .test-body {
+        margin-bottom: 120px;
+    }
+}
