@@ -73,7 +73,7 @@ export default class WordsTable extends React.Component {
             )
 
         return (
-                <div>
+                <div className="table-block">
                     <SearchBlock onChange={this.Search} />
                     <table>
                         <tbody>

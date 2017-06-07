@@ -1,21 +1,28 @@
+.table-block {
+    width: 1000px;
+}
+
 table {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     padding: 20px;
 
     border: 2px solid green;
     border-radius: 6px;
     border-collapse: collapse;
     
+    width: 100%;
     box-shadow: 0 0 10px yellowgreen;
 }
 
 tbody {
-    min-width: 785px;
+    min-width: 980px;
+    font-size: 17px;
 }
 
 tr th {
     height: 30px;
+    text-align: center;
 }
 
 td {
@@ -42,7 +49,7 @@ tr > td:nth-child(3) {
 tr > td:last-child {
     width: 420px;
     font-family: 'Pattaya';
-    font-size: 17px;
+    font-size: 19px;
 }
 
 tr {
@@ -52,4 +59,57 @@ tr {
 tr:not(.table-header):hover {
     cursor: pointer;
     background-color:#FFFACD;
+}
+
+@media screen and (max-width: 450px) {
+    .table-block {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    table {
+        width: auto;
+        padding: 0;
+        margin-left: 16px;
+        margin-bottom: 70px;
+    }
+
+    tbody {
+        max-width: 350px;
+        font-size: 11px;
+    }
+
+    .table-block > .search-block, table {
+        align-self: center;
+    }
+
+    tr th {
+        height: 30px;
+        font-size: 11px;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    tr > td {
+        word-wrap: break-word;
+        width: 25px;
+    }
+
+    tr > td:first-child {
+        width: 25px;
+    }
+
+    tr > td:nth-child(2) {
+        width: 25px;
+    }
+
+    tr > td:nth-child(3) {
+        width: 25px;
+    }
+
+    tr > td:last-child {
+        width: 50px;
+        font-family: 'Pattaya';
+        font-size: 15px;
+    }
 }

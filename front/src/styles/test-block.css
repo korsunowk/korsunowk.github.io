@@ -1,7 +1,3 @@
-.test-block {
-    display: flex;
-}
-
 h2, h3, .test-header {
     text-align: center;
 }
@@ -16,7 +12,7 @@ h2, h3, .test-header {
     font-size: 20px;
 }
 
-.verb-infinitive, .verb-russian {
+.verb-infinitive, .verb-russian, .verb-perfect, .verb-simple {
     margin-left: 15px;
 }
 
@@ -26,6 +22,10 @@ h2, h3, .test-header {
 
 .verb-russian::before {
     content: "(";
+}
+
+.verb-perfect::before, .verb-simple::before {
+    content: "/ ";
 }
 
 .verb-russian::after {
@@ -47,6 +47,7 @@ h2, h3, .test-header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
+    font-size: 18px;
 }
 
 .test-test input {
@@ -63,8 +64,30 @@ hr {
     width: 100%;
 }
 
-.alternate-test {
+.test-block {
+    width: 1000px;
     border: 1px solid yellowgreen;
+    margin-bottom: 75px;
     padding: 25px;
     border-radius: 15px;
+}
+
+@media screen and (max-width: 450px) {
+    .test-block {
+        width: 350px;
+        height: 670px;
+        margin-left: 35px;
+    }
+
+    .test-test {
+        width: 350px;
+    }
+
+    .test-test label {
+        flex-direction: column;
+    }
+
+    .test-body {
+        margin-bottom: 120px;
+    }
 }

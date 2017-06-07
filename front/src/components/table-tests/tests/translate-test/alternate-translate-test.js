@@ -2,20 +2,19 @@ import React from 'react';
 
 var words = require('../../../../words.json');
 
-export default class AlternateTest extends React.Component {
+export default class AlternateTranslateTest extends React.Component {
     constructor() {
         super();
 
         let _words = {};
         for(let i=1; i<= Object.keys(words).length; i++)
             _words[i] = words[i];
-        
+
         this.state = {
             _words: _words,
             current_word: 1,
 
-            past_simple_error: false,
-            perfect_error: false
+            translate_error: false
         };
 
         this.CheckWords = this.CheckWords.bind(this);
@@ -37,27 +36,27 @@ export default class AlternateTest extends React.Component {
     }
 
     CheckWords() {
-        let past_simple = this.refs.past.value;
-        let perfect = this.refs.perfect.value;
+        let translate = this.refs.translate.value;
         let current_word = this.state._words[this.state.current_word];
 
         let valid = true;
 
         let errors = {
-            'past_simple_error': false,
-            'perfect_error': false
+            'translate_error': false
         }
 
-        if (current_word['past_simple'].trim() !== past_simple.toLowerCase().trim()) {
+        let curr_word = current_word['russian_translate'].split(', ');
+        for(let i=0; i < curr_word.length; i++) {
+            if (curr_word[i].trim() === translate.toLowerCase().trim()) {
+                valid = true;
+                errors['translate_error'] = false;
+                break;
+            }
+
             valid = false;
-            errors['past_simple_error'] = true;
+            errors['translate_error'] = true;
         }
-        
-        if (current_word['perfect'].trim() !== perfect.toLowerCase().trim()) {
-            valid = false;
-            errors['perfect_error'] = true;
-        }
-        
+            
         if (valid) {
             this.cleanInputs();
             this.changeStateToNext();        
@@ -71,14 +70,12 @@ export default class AlternateTest extends React.Component {
 
         this.setState({
             current_word: next,
-            past_simple_error: false, 
-            perfect_error: false
+            translate_error: false
         })
     }
 
     cleanInputs() {
-        this.refs.perfect.value = "";
-        this.refs.past.value = "";
+        this.refs.translate.value = "";
     }
 
     addErrorOnInput(errors) {
@@ -88,8 +85,8 @@ export default class AlternateTest extends React.Component {
     render () {
         return (
             <div className="test-block">
-                <h2>Alternate test</h2>
-                <h3>Enter the correct forms of the displayed verb in the appropriate fields.</h3>
+                <h2>Translate test</h2>
+                <h3>Enter the correct translation of the displayed verb in the appropriate field.</h3>
                 <div className="test-body" onKeyPress={(e) => this.EnterPress(e)}>
                     <div className="test-header">
                         <span className="verb-number">
@@ -98,30 +95,23 @@ export default class AlternateTest extends React.Component {
                         <span className="verb-infinitive">
                             {this.state._words[this.state.current_word]['infinitive']}
                         </span>
-                        <span className="verb-russian">
-                            {this.state._words[this.state.current_word]['russian_translate']}
+                        <span className="verb-simple">
+                            {this.state._words[this.state.current_word]['past_simple']}
+                        </span>
+                        <span className="verb-perfect">
+                            {this.state._words[this.state.current_word]['perfect']}
                         </span>
                     </div>
                     <hr />
                     <div className="test-test">
-                        <label htmlFor="verb-past-simple">
-                            Past simple: 
+                        <label htmlFor="translate-verb">
+                            Russian translate: 
                             <input 
                                 type="text" 
-                                id="verb-past-simple" 
+                                id="translate-verb" 
                                 onMouseEnter={this.AddFocus} 
-                                ref="past" 
-                                className={this.state.past_simple_error ? "error": ""} 
-                            />
-                        </label>
-                        <label htmlFor="verb-present-perfect">
-                            Past participle: 
-                            <input 
-                                type="text"
-                                id="verb-present-perfect" 
-                                onMouseEnter={this.AddFocus} 
-                                ref="perfect" 
-                                className={this.state.perfect_error ? "error": ""} 
+                                ref="translate" 
+                                className={this.state.translate_error ? "error": ""} 
                             />
                         </label>
                     </div>

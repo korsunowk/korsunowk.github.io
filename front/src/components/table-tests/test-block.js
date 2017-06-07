@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  NavLink
-} from 'react-router-dom'
-
-import RandomTest from './tests/random-test/random-test';
-import AlternateTest from './tests/alternate-test/alternate-test';
+import {NavLink} from 'react-router-dom'
 
 import '../../styles/test-block.css';
 
@@ -14,26 +7,31 @@ import '../../styles/test-block.css';
 export default class TestBlock extends React.Component {
     render () {
         return (
-          <Router>
-            <div className="test-block">
-              <div className="test-buttons">
-                <NavLink to="/tests/random" activeClassName="active">
-                  <div className="test-button">
-                    Test with random verbs
-                  </div>
-                </NavLink>
-                <NavLink to="/tests/alternate" activeClassName="active">
-                  <div className="test-button">
-                    Test with alternate verbs
-                  </div>
-                </NavLink>
-              </div>
-
-              <Route path="/tests/random" component={RandomTest} />
-              <Route path="/tests/alternate" component={AlternateTest} />
-            </div>
-          </Router>
-            
-            )
+          <ul className="dropdown-menu">
+            <NavLink to="/tests/random" activeClassName="active">
+              <li className="test-button">
+                Test with random verbs
+              </li>
+            </NavLink>
+            <li role="separator" className="divider"></li>
+            <NavLink to="/tests/alternate" activeClassName="active">
+              <li className="test-button">
+                Test with alternate verbs
+              </li>
+            </NavLink>
+            <li role="separator" className="divider"></li>
+            <NavLink to="/tests/random-translate" activeClassName="active">
+              <li className="test-button">
+                 Random translate test
+              </li>
+            </NavLink>
+            <li role="separator" className="divider"></li>
+            <NavLink to="/tests/alternate-translate" activeClassName="active">
+              <li className="test-button">
+                Alternate translate test
+              </li>
+            </NavLink>
+          </ul>
+        )
     }
 }
