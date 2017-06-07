@@ -46,7 +46,8 @@
     font-size: 17px;
     background-color: white;
     cursor: pointer;
-
+    text-align: center;
+    
     -moz-user-select: none;
     -khtml-user-select: none;
     user-select: none;

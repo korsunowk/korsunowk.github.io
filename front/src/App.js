@@ -14,6 +14,9 @@ import AlternateTest from './components/table-tests/tests/alternate-test/alterna
 import RandomTranslateTest from './components/table-tests/tests/translate-test/random-translate-test';
 import AlternateTranslateTest from './components/table-tests/tests/translate-test/alternate-translate-test';
 
+import RussianRandomTranslateTest from './components/table-tests/tests/translate-test/russian-rand';
+import RussianAlternateTranslateTest from './components/table-tests/tests/translate-test/russian-alt';
+
 import Footer from './components/footer';
 
 import logo from './logo.svg';
@@ -53,6 +56,9 @@ class App extends Component {
 
               <Route path="/tests/random-translate" component={RandomTranslateTest} />
               <Route path="/tests/alternate-translate" component={AlternateTranslateTest} />
+
+              <Route path="/tests/random-eng-translate" component={RussianRandomTranslateTest} />
+              <Route path="/tests/alternate-eng-translate" component={RussianAlternateTranslateTest} />
 
               <Route path="/table" component={WordsTable}/>
             </div>

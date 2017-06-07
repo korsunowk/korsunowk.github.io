@@ -20,7 +20,11 @@ h2, h3, .test-header {
     font-family: 'Pattaya'
 }
 
-.verb-russian::before {
+.verb-russian.no-brakets {
+    font-size: 23px;
+}
+
+.verb-russian:not(.no-brakets)::before {
     content: "(";
 }
 
@@ -28,7 +32,7 @@ h2, h3, .test-header {
     content: "/ ";
 }
 
-.verb-russian::after {
+.verb-russian:not(.no-brakets)::after {
     content: ")";
 }
 

@@ -31,6 +31,18 @@ export default class TestBlock extends React.Component {
                 Alternate translate test
               </li>
             </NavLink>
+            <li role="separator" className="divider"></li>
+            <NavLink to="/tests/alternate-eng-translate" activeClassName="active">
+              <li className="test-button">
+                English translate test alternate
+              </li>
+            </NavLink>
+            <li role="separator" className="divider"></li>
+            <NavLink to="/tests/random-eng-translate" activeClassName="active">
+              <li className="test-button">
+                English translate test random
+              </li>
+            </NavLink>
           </ul>
         )
     }
