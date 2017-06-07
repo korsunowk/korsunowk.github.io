@@ -60,3 +60,56 @@ tr:not(.table-header):hover {
     cursor: pointer;
     background-color:#FFFACD;
 }
+
+@media screen and (max-width: 450px) {
+    .table-block {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    table {
+        width: auto;
+        padding: 0;
+        margin-left: 16px;
+        margin-bottom: 70px;
+    }
+
+    tbody {
+        max-width: 350px;
+        font-size: 11px;
+    }
+
+    .table-block > .search-block, table {
+        align-self: center;
+    }
+
+    tr th {
+        height: 30px;
+        font-size: 11px;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    tr > td {
+        word-wrap: break-word;
+        width: 25px;
+    }
+
+    tr > td:first-child {
+        width: 25px;
+    }
+
+    tr > td:nth-child(2) {
+        width: 25px;
+    }
+
+    tr > td:nth-child(3) {
+        width: 25px;
+    }
+
+    tr > td:last-child {
+        width: 50px;
+        font-family: 'Pattaya';
+        font-size: 15px;
+    }
+}

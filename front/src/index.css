@@ -53,7 +53,7 @@ footer a:hover {
 
 @media screen and (max-width: 450px) {
   footer {
-    height: 100px;
+    height: 70px;
     width: 400px;
   }
 
