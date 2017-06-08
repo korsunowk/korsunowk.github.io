@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  NavLink
+  NavLink,
+  Link
 } from 'react-router-dom'
 
 import WordsTable from './components/table-words/table';
@@ -33,39 +34,42 @@ class App extends Component {
   }
   render() {
     return (
+      <Router>
       <div className="App">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Link to="/">
+          <img src={logo} className="App-logo" alt="logo" /> 
+        </Link>
         <div className="app-block">
           <h1>Welcome to Past participle helper</h1>    
-          <Router>      
-            <div>
-              <div className="buttons">
-                <NavLink to='/table' activeClassName="active">
-                  <div className="button">Table with verbs forms</div>
-                </NavLink>
-                <div className="btn-group">
-                  <div className="button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick={this.TestTest}>
-                    Some tests <span className="caret"></span>
-                  </div>
-                  <TestBlock />
+          <div>
+            <div className="buttons">
+              <NavLink to='/table' activeClassName="active">
+                <div className="button">Table with verbs forms</div>
+              </NavLink>
+              <div className="btn-group">
+                <div className="button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick={this.TestTest}>
+                  Some tests <span className="caret"></span>
                 </div>
+                <TestBlock />
               </div>
-              
-              <Route path="/tests/random" component={RandomTest} />
-              <Route path="/tests/alternate" component={AlternateTest} />
-
-              <Route path="/tests/random-translate" component={RandomTranslateTest} />
-              <Route path="/tests/alternate-translate" component={AlternateTranslateTest} />
-
-              <Route path="/tests/random-eng-translate" component={RussianRandomTranslateTest} />
-              <Route path="/tests/alternate-eng-translate" component={RussianAlternateTranslateTest} />
-
-              <Route path="/table" component={WordsTable}/>
             </div>
-          </Router>
+            
+            <Route path="/tests/random" component={RandomTest} />
+            <Route path="/tests/alternate" component={AlternateTest} />
+
+            <Route path="/tests/random-translate" component={RandomTranslateTest} />
+            <Route path="/tests/alternate-translate" component={AlternateTranslateTest} />
+
+            <Route path="/tests/random-eng-translate" component={RussianRandomTranslateTest} />
+            <Route path="/tests/alternate-eng-translate" component={RussianAlternateTranslateTest} />
+
+            <Route path="/table" component={WordsTable}/>
+          </div>
         </div>
         <Footer />
       </div>
+          </Router>
+      
     );
   }
 }
