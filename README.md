@@ -21,7 +21,7 @@ At the moment, the following tests are implemented in the application:
 
 ![Random translate test](http://dl4.joxi.net/drive/2017/06/08/0020/0712/1331912/12/630e6c8f58.jpg)
 
-- Test of knowledge of the translation of English words from the table.
+- *Test of knowledge of the translation of English words from the table.*
 
 ![Alternate russ translate test](http://dl3.joxi.net/drive/2017/06/08/0020/0712/1331912/12/fef9de100a.jpg)
 
