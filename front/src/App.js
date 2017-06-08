@@ -18,19 +18,24 @@ import RussianRandomTranslateTest from './components/table-tests/tests/translate
 import RussianAlternateTranslateTest from './components/table-tests/tests/translate-test/russian-alt';
 
 import Footer from './components/footer';
+import UsersList from './components/api/get-usets';
+
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 
 import logo from './logo.svg';
 import store from './store';
 import './App.css';
 import './styles/buttons.css'
 
+function TestTest(e) {
+  store.dispatch({
+      type: 'TOGGLE_TABLE'
+  });
+}
 
 class App extends Component {
-  TestTest = (e) => {
-    store.dispatch({
-        type: 'TOGGLE_TABLE'
-    });
-  }
+  
   render() {
     return (
       <div className="App">
@@ -44,13 +49,13 @@ class App extends Component {
                   <div className="button">Table with verbs forms</div>
                 </NavLink>
                 <div className="btn-group">
-                  <div className="button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick={this.TestTest}>
+                  <div className="button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick={TestTest}>
                     Some tests <span className="caret"></span>
                   </div>
                   <TestBlock />
                 </div>
               </div>
-              
+              <UsersList />
               <Route path="/tests/random" component={RandomTest} />
               <Route path="/tests/alternate" component={AlternateTest} />
 
@@ -70,4 +75,16 @@ class App extends Component {
   }
 }
 
-export default App;
+function mapStateToProps(state) {
+  return {
+    table: state
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    pageActions: bindActionCreators(TestTest, dispatch)
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

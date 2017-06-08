@@ -1,11 +1,17 @@
 import React from 'react';
 import TableCell from './table-cell';
 import SearchBlock from './search-block';
-
+import { connect } from 'react-redux'
 import '../../styles/table.css';
 var words = require('../../words.json');
 
-export default class WordsTable extends React.Component {
+function mapStateToProps (state) {
+  return {
+    table: state
+  }
+}
+
+class WordsTable extends React.Component {
     constructor() {
         super();
 
@@ -14,7 +20,8 @@ export default class WordsTable extends React.Component {
             _words[i] = words[i];
 
         this.state = {
-            _words: _words
+            _words: _words,
+            open: true
         };
 
         this.Search = this.Search.bind(this);
@@ -51,43 +58,49 @@ export default class WordsTable extends React.Component {
     }
 
     render () {
-        let cells = [];
-        let words_exist = false;
+        console.log('render=', this.props.table.table);
+        if (this.props.table.table) {
+            let cells = [];
+            let words_exist = false;
 
-        for(let key in this.state._words) {
-            cells.push(
-                <TableCell
-                    russian={this.state._words[key]['russian_translate']}
-                    infinitive={this.state._words[key]['infinitive']}
-                    past_simple={this.state._words[key]['past_simple']}
-                    perfect={this.state._words[key]['perfect']}
-                    key={key}
-                    number={key}
-                />
+            for(let key in this.state._words) {
+                cells.push(
+                    <TableCell
+                        russian={this.state._words[key]['russian_translate']}
+                        infinitive={this.state._words[key]['infinitive']}
+                        past_simple={this.state._words[key]['past_simple']}
+                        perfect={this.state._words[key]['perfect']}
+                        key={key}
+                        number={key}
+                    />
+                )
+                words_exist = true;
+            }
+            if (!words_exist)
+                cells.push(
+                    <TableCell empty key={0} />
+                )
+
+            return (
+                    <div className="table-block">
+                        <SearchBlock onChange={this.Search} />
+                        <table>
+                            <tbody>
+                                <tr className="table-header">
+                                    <th>№</th>
+                                    <th>Infinitive</th>
+                                    <th>Past simple</th>
+                                    <th>Past participle</th>
+                                    <th>Russian translate</th>
+                                </tr>
+                                {cells}
+                            </tbody>
+                        </table>
+                    </div>
             )
-            words_exist = true;
         }
-        if (!words_exist)
-            cells.push(
-                <TableCell empty key={0} />
-            )
-
-        return (
-                <div className="table-block">
-                    <SearchBlock onChange={this.Search} />
-                    <table>
-                        <tbody>
-                            <tr className="table-header">
-                                <th>№</th>
-                                <th>Infinitive</th>
-                                <th>Past simple</th>
-                                <th>Past participle</th>
-                                <th>Russian translate</th>
-                            </tr>
-                            {cells}
-                        </tbody>
-                    </table>
-                </div>
-        )
+        return null
     }
 }
+
+export default connect(mapStateToProps)(WordsTable)
