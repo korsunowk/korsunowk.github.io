@@ -90,7 +90,7 @@ hr {
 @media screen and (max-width: 450px) {
     .test-block {
         width: 350px;
-        height: 670px;
+        height: 685px;
         margin-left: 35px;
     }
 
@@ -103,6 +103,15 @@ hr {
     }
 
     .test-body {
-        margin-bottom: 120px;
+        margin-top: 60px;
+        border-top: 1px solid yellowgreen;
+        padding-top: 15px;
+    }
+
+    .test-counter {
+        font-size: 20px;
+        position: absolute;
+        top: 175px;
+        left: 113px;
     }
 }
