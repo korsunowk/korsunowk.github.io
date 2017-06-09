@@ -20,6 +20,8 @@ import RussianAlternateTranslateTest from './components/table-tests/tests/transl
 
 import Footer from './components/footer';
 
+import SpeedTest from './components/table-tests/tests/speed-tests/speed-test'
+
 import logo from './logo.svg';
 import store from './store';
 import './App.css';
@@ -52,6 +54,9 @@ class App extends Component {
                 </div>
                 <TestBlock />
               </div>
+              <NavLink to='/speed-test' activeClassName='active'>
+                <div className='button'>Speed test</div>
+              </NavLink>
             </div>
             
             <Route path="/tests/random" component={RandomTest} />
@@ -62,6 +67,8 @@ class App extends Component {
 
             <Route path="/tests/random-eng-translate" component={RussianRandomTranslateTest} />
             <Route path="/tests/alternate-eng-translate" component={RussianAlternateTranslateTest} />
+            
+            <Route path="/speed-test" component={SpeedTest} />
 
             <Route path="/table" component={WordsTable}/>
           </div>

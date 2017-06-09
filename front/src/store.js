@@ -5,13 +5,17 @@ function reducer (state, action) {
     case 'TOGGLE_TABLE':
       let _new = !state.table
       return {...state, ...{table: _new}}
+    case 'DEC_SEC':
+      let newSec = state.seconds - 1
+      return {...state, ...{seconds: newSec}}
     default:
       return state
   }
 }
 
 const store = createStore(reducer, {
-  table: true
+  table: true,
+  seconds: 30
 })
 
 export default store
