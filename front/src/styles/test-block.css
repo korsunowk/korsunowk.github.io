@@ -46,6 +46,17 @@ h2, h3, .test-header {
     margin-top: 40px;
 }
 
+.test-top {
+    position: relative;
+}
+
+.test-counter {
+    font-size: 20px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
 .test-test label {
     display: flex;
     justify-content: space-between;

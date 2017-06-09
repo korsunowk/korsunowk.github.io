@@ -99,13 +99,15 @@ export default class RussianRandomTranslateTest extends React.Component {
   render () {
     return (
       <div className='test-block'>
-        <h2>Translate test</h2>
+        <div className='test-top'>
+          <h2>Translate test</h2>
+          <span className='test-counter'>
+            {++this.state.current_word} / {this.state._words.length}
+          </span>
+        </div>
         <h3>Enter the correct translation of the displayed verb in the appropriate field.</h3>
         <div className='test-body' onKeyPress={(e) => this.EnterPress(e)}>
           <div className='test-header'>
-            <span className='verb-number'>
-              {this.state._words[this.state.current_word]['number']}.
-                        </span>
             <span className='verb-russian no-brakets'>
               {this.state._words[this.state.current_word]['russian_translate']}
             </span>
@@ -113,7 +115,7 @@ export default class RussianRandomTranslateTest extends React.Component {
           <hr />
           <div className='test-test'>
             <label htmlFor='translate-verb'>
-                Russian translate:
+                English translate:
                 <input
                   type='text'
                   id='translate-verb'

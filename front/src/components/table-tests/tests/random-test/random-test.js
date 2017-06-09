@@ -108,13 +108,15 @@ export default class RandomTest extends React.Component {
   render () {
     return (
       <div className='test-block'>
-        <h2>Random test</h2>
+        <div className='test-top'>
+          <h2>Random test</h2>
+          <span className='test-counter'>
+            {++this.state.current_word} / {this.state._words.length}
+          </span>
+        </div>
         <h3>Enter the correct forms of the displayed verb in the appropriate fields.</h3>
         <div className='test-body' onKeyPress={(e) => this.EnterPress(e)}>
           <div className='test-header'>
-            <span className='verb-number'>
-              {this.state._words[this.state.current_word]['number']}.
-                        </span>
             <span className='verb-infinitive'>
               {this.state._words[this.state.current_word]['infinitive']}
             </span>

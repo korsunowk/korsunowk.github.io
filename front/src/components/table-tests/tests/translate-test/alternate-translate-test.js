@@ -86,13 +86,15 @@ export default class AlternateTranslateTest extends React.Component {
   render () {
     return (
       <div className='test-block'>
-        <h2>Translate test</h2>
+        <div className='test-top'>
+          <h2>Translate test</h2>
+          <span className='test-counter'>
+            {this.state.current_word} / {Object.keys(this.state._words).length}
+          </span>
+        </div>
         <h3>Enter the correct translation of the displayed verb in the appropriate field.</h3>
         <div className='test-body' onKeyPress={(e) => this.EnterPress(e)}>
           <div className='test-header'>
-            <span className='verb-number'>
-              {this.state.current_word}.
-            </span>
             <span className='verb-infinitive'>
               {this.state._words[this.state.current_word]['infinitive']}
             </span>
