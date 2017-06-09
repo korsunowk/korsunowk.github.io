@@ -108,7 +108,7 @@ export default class RandomTranslateTest extends React.Component {
         <div className='test-top'>
           <h2>Translate test</h2>
           <span className='test-counter'>
-            {++this.state.current_word} / {this.state._words.length}
+            {this.state.current_word + 1} / {this.state._words.length}
           </span>
         </div>
         <h3>Enter the correct translation of the displayed verb in the appropriate field.</h3>
