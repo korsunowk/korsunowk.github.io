@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import SpeedTimer from './speed-timer'
 
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import store from '../../../../store'
+
 var words = require('../../../../words.json')
 
 function shuffleArray (d) {
@@ -47,9 +51,17 @@ class SpeedTest extends Component {
   }
 
   EnterPress (e) {
-    if (e.key === 'Enter') {
-      this.CheckWords()
+    if (this.props.seconds !== 0) {
+      if (e.key === 'Enter') {
+        this.CheckWords()
+      }
     }
+  }
+
+  static ResetTimer () {
+    store.dispatch({
+      type: 'RESET_SEC'
+    })
   }
 
   AddFocus (e) {
@@ -82,6 +94,7 @@ class SpeedTest extends Component {
 
   changeStateToNext () {
     let next = ++this.state.current_word
+    SpeedTest.ResetTimer()
 
     this.setState({
       current_word: next,
@@ -95,6 +108,13 @@ class SpeedTest extends Component {
 
   addErrorOnInput (errors) {
     this.setState(errors)
+  }
+
+  shouldComponentUpdate (nextProps, nextState) {
+    if (nextProps.seconds === 0 || this.state.translate_error !== nextState.translate_error || this.state.current_word !== nextState.current_word) {
+      return true
+    }
+    return false
   }
 
   render () {
@@ -127,11 +147,23 @@ class SpeedTest extends Component {
                 />
             </label>
           </div>
-          <div className='button check' onClick={this.CheckWords}>Check</div>
+          <div className={'button check' + (this.props.seconds === 0 ? ' disabled' : '')} onClick={this.CheckWords}>Check</div>
         </div>
       </div>
     )
   }
 }
 
-export default SpeedTest
+function mapStateToProps (state) {
+  return {
+    seconds: state.seconds
+  }
+}
+
+function mapDispatchToProps (dispatch) {
+  return {
+    pageActions: bindActionCreators(SpeedTest.ResetTimer, dispatch)
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SpeedTest)

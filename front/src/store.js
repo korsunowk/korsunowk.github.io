@@ -8,6 +8,8 @@ function reducer (state, action) {
     case 'DEC_SEC':
       let newSec = state.seconds - 1
       return {...state, ...{seconds: newSec}}
+    case 'RESET_SEC':
+      return {...state, ...{seconds: 30}}
     default:
       return state
   }

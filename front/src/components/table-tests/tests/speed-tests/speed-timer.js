@@ -28,9 +28,9 @@ class SpeedTimer extends Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    this.setState(
-      nextProps.seconds
-    )
+    this.setState({
+      seconds: nextProps.seconds
+    })
   }
 
   shouldComponentUpdate (nextProps, nextState) {
@@ -38,13 +38,19 @@ class SpeedTimer extends Component {
   }
 
   componentDidMount () {
-    window.setInterval(SpeedTimer.MinusOneSecond(), 1000)
+    window.setTimeout(SpeedTimer.MinusOneSecond, 1000)
+  }
+
+  componentDidUpdate (prevProps, prevState) {
+    if (prevProps.seconds !== 1) {
+      window.setTimeout(SpeedTimer.MinusOneSecond, 500)
+    }
   }
 }
 
 function mapStateToProps (state) {
   return {
-    seconds: state
+    seconds: state.seconds
   }
 }
 
