@@ -9,8 +9,20 @@ class SpeedTimer extends Component {
     super()
 
     this.state = {
-      seconds: 30
+      seconds: 10
     }
+
+    this.interval = null
+    this.stopTimer = this.stopTimer.bind(this)
+    this.startTimer = this.startTimer.bind(this)
+  }
+
+  stopTimer () {
+    clearInterval(this.interval)
+  }
+
+  startTimer () {
+    this.interval = window.setInterval(SpeedTimer.MinusOneSecond, 1000)
   }
 
   static MinusOneSecond () {
@@ -28,9 +40,16 @@ class SpeedTimer extends Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    this.setState({
-      seconds: nextProps.seconds
-    })
+    if (nextProps.seconds >= 0) {
+      this.setState({
+        seconds: nextProps.seconds
+      })
+      if (nextProps.resetTimer) {
+        this.startTimer()
+      }
+    } else {
+      this.stopTimer()
+    }
   }
 
   shouldComponentUpdate (nextProps, nextState) {
@@ -38,13 +57,7 @@ class SpeedTimer extends Component {
   }
 
   componentDidMount () {
-    window.setTimeout(SpeedTimer.MinusOneSecond, 1000)
-  }
-
-  componentDidUpdate (prevProps, prevState) {
-    if (prevProps.seconds !== 1) {
-      window.setTimeout(SpeedTimer.MinusOneSecond, 1000)
-    }
+    this.startTimer()
   }
 }
 

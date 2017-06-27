@@ -7,9 +7,9 @@ function reducer (state, action) {
       return {...state, ...{table: _new}}
     case 'DEC_SEC':
       let newSec = state.seconds - 1
-      return {...state, ...{seconds: newSec}}
+      return {...state, ...{seconds: newSec, resetTimer: false}}
     case 'RESET_SEC':
-      return {...state, ...{seconds: 30}}
+      return {...state, ...{seconds: 10, resetTimer: true}}
     default:
       return state
   }
@@ -17,7 +17,8 @@ function reducer (state, action) {
 
 const store = createStore(reducer, {
   table: true,
-  seconds: 30
+  seconds: 10,
+  resetTimer: false
 })
 
 export default store

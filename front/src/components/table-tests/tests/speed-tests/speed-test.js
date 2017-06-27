@@ -42,6 +42,8 @@ class SpeedTest extends Component {
       translate_error: false
     }
 
+    this.timeIsOver = false
+
     this.CheckWords = this.CheckWords.bind(this)
     this.AddFocus = this.AddFocus.bind(this)
     this.changeStateToNext = this.changeStateToNext.bind(this)
@@ -69,31 +71,33 @@ class SpeedTest extends Component {
   }
 
   CheckWords () {
-    let translate = this.refs.translate.value
-    let currentWord = this.state._words[this.state.current_word]
+    if (!this.timeIsOver) {
+      let translate = this.refs.translate.value
+      let currentWord = this.state._words[this.state.current_word]
 
-    let valid = true
+      let valid = true
 
-    let errors = {
-      'translate_error': false
-    }
+      let errors = {
+        'translate_error': false
+      }
 
-    let currWord = currentWord['infinitive']
-    if (currWord.trim() !== translate.toLowerCase().trim()) {
-      valid = false
-      errors['translate_error'] = true
-    }
+      let currWord = currentWord['infinitive']
+      if (currWord.trim() !== translate.toLowerCase().trim()) {
+        valid = false
+        errors['translate_error'] = true
+      }
 
-    if (valid) {
-      this.cleanInputs()
-      this.changeStateToNext()
-    } else {
-      this.addErrorOnInput(errors)
+      if (valid) {
+        this.cleanInputs()
+        this.changeStateToNext()
+      } else {
+        this.addErrorOnInput(errors)
+      }
     }
   }
 
   changeStateToNext () {
-    let next = ++this.state.current_word
+    let next = this.state.current_word + 1
     SpeedTest.ResetTimer()
 
     this.setState({
@@ -111,7 +115,7 @@ class SpeedTest extends Component {
   }
 
   shouldComponentUpdate (nextProps, nextState) {
-    let validTime = nextProps.seconds < 7 && nextProps.seconds > 0
+    let validTime = nextProps.seconds < 6 && nextProps.seconds >= 0
     let validTranslate = this.state.translate_error !== nextState.translate_error
     let validCurrentWord = this.state.current_word !== nextState.current_word
 
@@ -122,8 +126,13 @@ class SpeedTest extends Component {
   }
 
   render () {
-    let alert = this.props.seconds <= 6 && this.props.seconds % 2 === 0 ? ' alert' : ''
-
+    let alert = null
+    if (this.props.seconds === 0) {
+      alert = ' alert'
+      this.timeIsOver = true
+    } else {
+      alert = this.props.seconds <= 5 && this.props.seconds % 2 !== 0 ? ' alert' : ''
+    }
     return (
       <div className={'test-block' + alert}>
         <div className='test-top'>
