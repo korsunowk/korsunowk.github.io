@@ -50,6 +50,11 @@ footer a:hover {
   box-shadow: 0 0 10px yellowgreen;
 }
 
+.alert {
+    box-shadow: 0 0 20px red;
+    transition: 1s;
+}
+
 
 @media screen and (max-width: 450px) {
   footer {

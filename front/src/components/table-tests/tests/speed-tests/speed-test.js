@@ -111,15 +111,17 @@ class SpeedTest extends Component {
   }
 
   shouldComponentUpdate (nextProps, nextState) {
-    if (nextProps.seconds === 0 || this.state.translate_error !== nextState.translate_error || this.state.current_word !== nextState.current_word) {
+    if (nextProps.seconds < 7 || this.state.translate_error !== nextState.translate_error || this.state.current_word !== nextState.current_word) {
       return true
     }
     return false
   }
 
   render () {
+    let alert = this.props.seconds <= 6 && this.props.seconds % 2 === 0 ? ' alert' : ''
+
     return (
-      <div className='test-block'>
+      <div className={'test-block' + alert}>
         <div className='test-top'>
           <h2>Speed test</h2>
           <SpeedTimer />
@@ -143,11 +145,11 @@ class SpeedTest extends Component {
                   id='translate-verb'
                   onMouseEnter={this.AddFocus}
                   ref='translate'
-                  className={this.state.translate_error ? 'error' : ''}
+                  className={alert + (this.state.translate_error ? 'error' : '')}
                 />
             </label>
           </div>
-          <div className={'button check' + (this.props.seconds === 0 ? ' disabled' : '')} onClick={this.CheckWords}>Check</div>
+          <div className={'button check' + (this.props.seconds === 0 ? ' disabled' : '') + alert} onClick={this.CheckWords}>Check</div>
         </div>
       </div>
     )

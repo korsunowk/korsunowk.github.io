@@ -43,7 +43,7 @@ class SpeedTimer extends Component {
 
   componentDidUpdate (prevProps, prevState) {
     if (prevProps.seconds !== 1) {
-      window.setTimeout(SpeedTimer.MinusOneSecond, 500)
+      window.setTimeout(SpeedTimer.MinusOneSecond, 1000)
     }
   }
 }
