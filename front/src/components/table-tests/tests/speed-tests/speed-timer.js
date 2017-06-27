@@ -59,6 +59,10 @@ class SpeedTimer extends Component {
   componentDidMount () {
     this.startTimer()
   }
+
+  componentWillUnmount () {
+    this.stopTimer()
+  }
 }
 
 function mapStateToProps (state) {

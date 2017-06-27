@@ -167,6 +167,9 @@ class SpeedTest extends Component {
       </div>
     )
   }
+  componentWillUnmount () {
+    SpeedTest.ResetTimer()
+  }
 }
 
 function mapStateToProps (state) {
