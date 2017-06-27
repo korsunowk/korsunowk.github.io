@@ -111,7 +111,11 @@ class SpeedTest extends Component {
   }
 
   shouldComponentUpdate (nextProps, nextState) {
-    if (nextProps.seconds < 7 || this.state.translate_error !== nextState.translate_error || this.state.current_word !== nextState.current_word) {
+    let validTime = nextProps.seconds < 7 && nextProps.seconds > 0
+    let validTranslate = this.state.translate_error !== nextState.translate_error
+    let validCurrentWord = this.state.current_word !== nextState.current_word
+
+    if (validTime || validTranslate || validCurrentWord) {
       return true
     }
     return false

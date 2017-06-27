@@ -34,7 +34,7 @@ class SpeedTimer extends Component {
   }
 
   shouldComponentUpdate (nextProps, nextState) {
-    return this.state.seconds !== nextState.seconds
+    return this.state.seconds !== nextState.seconds && nextState.seconds >= 0
   }
 
   componentDidMount () {
