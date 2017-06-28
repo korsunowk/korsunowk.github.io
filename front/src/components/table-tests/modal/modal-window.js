@@ -27,7 +27,7 @@ function ModalWindow (props) {
   let displayedBlock = props.type === 'win' ? winBlock : loseBlock
 
   return (
-    <div className='modal-window'>
+    <div className={'modal-window ' + props.type}>
       {displayedBlock}
     </div>
   )

@@ -8,6 +8,11 @@
     border-radius: 15px;
 }
 
+.modal-window.lose {
+    border: 1px solid red;
+    box-shadow: 0 0 15px red;
+}
+
 .modal-window h1 {
     text-align: center;
 }
