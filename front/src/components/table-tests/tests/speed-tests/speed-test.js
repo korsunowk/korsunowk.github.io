@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SpeedTimer from './speed-timer'
+import ModalWindow from '../../modal/modal-window'
 
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
@@ -39,7 +40,8 @@ class SpeedTest extends Component {
       _words: _words.slice(0, 20),
       current_word: 0,
 
-      translate_error: false
+      translate_error: false,
+      testIsOver: false
     }
 
     this.timeIsOver = false
@@ -100,10 +102,16 @@ class SpeedTest extends Component {
     let next = this.state.current_word + 1
     SpeedTest.ResetTimer()
 
-    this.setState({
-      current_word: next,
-      translate_error: false
-    })
+    if (next !== this.state._words.length) {
+      this.setState({
+        current_word: next,
+        translate_error: false
+      })
+    } else {
+      this.setState({
+        testIsOver: true
+      })
+    }
   }
 
   cleanInputs () {
@@ -119,17 +127,22 @@ class SpeedTest extends Component {
     let validTranslate = this.state.translate_error !== nextState.translate_error
     let validCurrentWord = this.state.current_word !== nextState.current_word
 
-    if (validTime || validTranslate || validCurrentWord) {
+    if (validTime || validTranslate || validCurrentWord || this.state.testIsOver) {
       return true
     }
     return false
   }
 
   render () {
+    if (this.state.testIsOver) {
+      return <ModalWindow type={'win'} />
+    }
+
     let alert = null
     if (this.props.seconds === 0) {
       alert = ' alert'
       this.timeIsOver = true
+      return <ModalWindow type={'lose'} />
     } else {
       alert = this.props.seconds <= 5 && this.props.seconds % 2 !== 0 ? ' alert' : ''
     }
