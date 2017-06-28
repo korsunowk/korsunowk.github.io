@@ -94,6 +94,11 @@ hr {
         margin-left: 35px;
     }
 
+    .timer-block {
+        text-align: center;
+        font-size: 15px;
+    }
+
     .test-test {
         width: 350px;
     }
@@ -113,5 +118,9 @@ hr {
         position: absolute;
         top: 175px;
         left: 113px;
+    }
+
+    .test-counter.speed-test {
+        top: 200px;
     }
 }

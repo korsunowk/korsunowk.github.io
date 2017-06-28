@@ -138,7 +138,7 @@ class SpeedTest extends Component {
         <div className='test-top'>
           <h2>Speed test</h2>
           <SpeedTimer />
-          <span className='test-counter'>
+          <span className='test-counter speed-test'>
             {this.state.current_word + 1} / {this.state._words.length}
           </span>
         </div>

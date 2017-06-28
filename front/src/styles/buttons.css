@@ -99,7 +99,7 @@
 @media screen and (max-width: 450px) {
     .buttons {
         width: 400px;
-        height: 125px;
+        height: 225px;
         flex-direction: column;
         justify-content: space-between;
     }
