@@ -1,0 +1,27 @@
+.modal-window {
+    width: 1000px;
+    border: 1px solid yellowgreen;
+    box-shadow: 0 0 15px green;
+
+    margin-bottom: 75px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.modal-window h1 {
+    text-align: center;
+}
+
+.modal-window .button-block {
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 25px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-window .button-block a, .modal-window .button-block a:hover {
+    text-decoration: none;
+    color: black;
+}
