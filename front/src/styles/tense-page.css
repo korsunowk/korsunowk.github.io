@@ -1,0 +1,52 @@
+.tense-page {
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid green;
+    border-radius: 15px;
+
+    margin-bottom: 80px;
+}
+
+.tense-page > div:not(:first-child) {
+    margin-top: 70px;
+}
+
+.tense-page > div:last-child {
+    margin-bottom: 25px;
+}
+
+hr {
+    border: 1px solid green;
+    width: 80%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-headers, .content-text {
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+
+    width: 80%;
+    font-size: 19px;    
+}
+
+.content-headers {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid green;
+}
+
+.content-text {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.red {
+    color: red;
+}

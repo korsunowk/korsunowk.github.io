@@ -20,6 +20,7 @@ export default class SearchBlock extends React.Component {
           placeholder='Search words...'
           onMouseEnter={this.AddFocus}
         />
+        {this.props.children}
       </div>
     )
   }

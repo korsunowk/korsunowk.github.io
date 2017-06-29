@@ -59,7 +59,7 @@
     border: 2px solid green;
 }
 
-.dropdown-menu > a {
+.dropdown-menu > a, .tense-button, .tense-button:hover {
     color: black;
     text-decoration: none;
 }
