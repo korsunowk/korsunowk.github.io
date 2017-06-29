@@ -3,6 +3,7 @@ import TableCell from './table-cell'
 import SearchBlock from './search-block'
 
 import '../../styles/table.css'
+
 var words = require('../../words.json')
 
 export default class WordsTable extends React.Component {
@@ -64,14 +65,12 @@ export default class WordsTable extends React.Component {
           perfect={this.state._words[key]['perfect']}
           key={key}
           number={key}
-                />
+        />
       )
       wordsExist = true
     }
     if (!wordsExist) {
-      cells.push(
-        <TableCell empty key={0} />
-            )
+      cells.push(<TableCell empty key={0} />)
     }
 
     return (
