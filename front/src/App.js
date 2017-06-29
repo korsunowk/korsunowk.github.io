@@ -37,46 +37,45 @@ class App extends Component {
   render() {
     return (
       <Router>
-      <div className="App">
-        <Link to="/">
-          <img src={logo} className="App-logo" alt="logo" /> 
-        </Link>
-        <div className="app-block">
-          <h1>Welcome to Past participle helper</h1>    
-          <div>
-            <div className="buttons">
-              <NavLink to='/table' activeClassName="active">
-                <div className="button">Table with verbs forms</div>
-              </NavLink>
-              <div className="btn-group">
-                <div className="button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick={this.TestTest}>
-                  Some tests <span className="caret"></span>
+        <div className="App">
+          <Link to="/">
+            <img src={logo} className="App-logo" alt="logo" /> 
+          </Link>
+          <div className="app-block">
+            <h1>Welcome to Past participle helper</h1>    
+            <div>
+              <div className="buttons">
+                <NavLink to='/table' activeClassName="active">
+                  <div className="button">Table with verbs forms</div>
+                </NavLink>
+                <div className="btn-group">
+                  <div className="button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick={this.TestTest}>
+                    Some tests <span className="caret"></span>
+                  </div>
+                  <TestBlock />
                 </div>
-                <TestBlock />
+                <NavLink to='/speed-test' activeClassName='active'>
+                  <div className='button'>Speed test</div>
+                </NavLink>
               </div>
-              <NavLink to='/speed-test' activeClassName='active'>
-                <div className='button'>Speed test</div>
-              </NavLink>
+              
+              <Route path="/tests/random" component={RandomTest} />
+              <Route path="/tests/alternate" component={AlternateTest} />
+
+              <Route path="/tests/random-translate" component={RandomTranslateTest} />
+              <Route path="/tests/alternate-translate" component={AlternateTranslateTest} />
+
+              <Route path="/tests/random-eng-translate" component={RussianRandomTranslateTest} />
+              <Route path="/tests/alternate-eng-translate" component={RussianAlternateTranslateTest} />
+              
+              <Route path="/speed-test" component={SpeedTest} />
+
+              <Route path="/table" component={WordsTable}/>
             </div>
-            
-            <Route path="/tests/random" component={RandomTest} />
-            <Route path="/tests/alternate" component={AlternateTest} />
-
-            <Route path="/tests/random-translate" component={RandomTranslateTest} />
-            <Route path="/tests/alternate-translate" component={AlternateTranslateTest} />
-
-            <Route path="/tests/random-eng-translate" component={RussianRandomTranslateTest} />
-            <Route path="/tests/alternate-eng-translate" component={RussianAlternateTranslateTest} />
-            
-            <Route path="/speed-test" component={SpeedTest} />
-
-            <Route path="/table" component={WordsTable}/>
           </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-          </Router>
-      
+      </Router>
     );
   }
 }
