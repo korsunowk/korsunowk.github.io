@@ -3,7 +3,7 @@ import React from 'react'
 import '../../../styles/modal-window.css'
 import '../../../styles/buttons.css'
 
-function ModalWindow (props) {
+export default function ModalWindow (props) {
   let winBlock = (
     <div>
       <h1>Congratulations!</h1>
@@ -32,5 +32,3 @@ function ModalWindow (props) {
     </div>
   )
 }
-
-export default ModalWindow
