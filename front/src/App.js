@@ -19,6 +19,7 @@ import RussianRandomTranslateTest from './components/table-tests/tests/translate
 import RussianAlternateTranslateTest from './components/table-tests/tests/translate-test/russian-alt'
 
 import Footer from './components/footer'
+import TensePage from './components/tenses/tense-page'
 
 import SpeedTest from './components/table-tests/tests/speed-tests/speed-test'
 
@@ -61,7 +62,7 @@ export default function App () {
             <Route path='/tests/alternate-eng-translate' component={RussianAlternateTranslateTest} />
 
             <Route path='/speed-test' component={SpeedTest} />
-
+            <Route path='/tenses' component={TensePage} />
             <Route path='/table' component={WordsTable} />
           </div>
         </div>

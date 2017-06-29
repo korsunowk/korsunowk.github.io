@@ -76,6 +76,7 @@ export default class WordsTable extends React.Component {
     return (
       <div className='table-block'>
         <SearchBlock onChange={this.Search} />
+        <a href='/tenses'> Page with Tense </a>
         <table>
           <tbody>
             <tr className='table-header'>
